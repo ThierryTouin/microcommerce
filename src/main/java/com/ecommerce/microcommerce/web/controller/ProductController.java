@@ -19,15 +19,16 @@ public class ProductController {
 
 
     //Récupérer la liste des produits
-    /*
+
     @RequestMapping(value = "/Produits", method = RequestMethod.GET)
     public List<Product> listeProduits() {
         return productDao.findAll();
     }
-    */
+
 
 
     //Récupérer la liste des produits
+    /*
     @RequestMapping(value = "/Produits", method = RequestMethod.GET)
     public MappingJacksonValue listeProduits() {
         List<Product> produits = productDao.findAll();
@@ -37,6 +38,7 @@ public class ProductController {
         produitsFiltres.setFilters(listDeNosFiltres);
         return produitsFiltres;
     }
+    */
 
     //Récupérer un produit par son Id
     @GetMapping(value = "/Produits/{id}")
