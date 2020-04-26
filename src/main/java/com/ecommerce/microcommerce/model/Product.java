@@ -3,11 +3,19 @@ package com.ecommerce.microcommerce.model;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@JsonIgnoreProperties(value = {"prixAchat", "id"}) //=> filtre statique
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+//@JsonIgnoreProperties(value = {"prixAchat", "id"}) //=> filtre statique
 //@JsonFilter("monFiltreDynamique")
+@Entity
 public class Product {
 
+    @Id
+    @GeneratedValue
     private int id;
+
     private String nom;
     private int prix;
 
