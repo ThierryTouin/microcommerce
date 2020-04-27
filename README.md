@@ -1,5 +1,11 @@
 # microcommerce
 
+### Start
+
+mvn clean package
+cd target
+java -jar ....jar
+
 ### API
 
 http://localhost:9090/Produits
